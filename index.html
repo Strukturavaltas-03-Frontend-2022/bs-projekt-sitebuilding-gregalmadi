@@ -26,9 +26,9 @@
         <a class="navbar-brand" href="#">Start Bootstrap</a>
 
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">DOWNLOAD</a>
-          <a class="nav-item nav-link" href="#">FEATURES</a>
-          <a class="nav-item nav-link" href="#">CONTACT</a>
+          <span><a class="nav-item nav-link">DOWNLOAD</a></span>
+          <span><a class="nav-item nav-link">FEATURES</a></span>
+          <span><a class="nav-item nav-link">CONTACT</a></span>  
         </div>
       </div>
     </nav>
@@ -39,7 +39,7 @@
       <div class="row text-center">
         <div class="col-2"></div>
         <div class="col-4">
-          <div class="row text-left intro--light">
+          <div class="row text-left intro--light header">
             New Age is an app landing page that will help you beautifully
             showcase your new mobile app, or anything else!
           </div>
@@ -58,14 +58,16 @@
       </div>
     </div>
     <div
-      class="container__segment--second d-flex justify-content-center align-items-center"
+    id="download" class="container__segment--second d-flex justify-content-center align-items-center"
     >
       <div class="row text-center">
         <div class="col">
-          <div class="intro--dark mb-3">Discover what all the buzz is about!</div>
+          <div class="intro--dark mb-3 header">
+            Discover what all the buzz is about!
+          </div>
           <div class="row text-center">
             <div class="col">
-              <div class="download_text mb-3">
+              <div class="download_text mb-3 paragraph">
                 Our app is available on any mobile device! Download now to get
                 started!
               </div>
@@ -91,88 +93,150 @@
     </div>
 
     <div
-      class="footer container__segment--third d-flex flex-column justify-content-center align-items-center"
+    id="features" class="footer container__segment--third d-flex flex-column justify-content-center align-items-center"
     >
-      <div class="row text-center intro--dark">
+      <div class="row text-center intro--dark header">
         Unlimited Features, Unlimited Fun
       </div>
-      <div class="row text-center details">
+      <div class="row text-center details paragraph">
         Check out what you can do with this app theme!
       </div>
       <hr class="mb-4" />
       <div class="row text-center">
-        <div class="col-2"></div>
-        <div class="col-4">
+       <div class="col-2"></div>
+        <div class="col-4 d-flex justify-content-center">
           <img
             class="row phone"
             src="./assets/img/phone_screen.png"
             alt="smartphone"
           />
         </div>
-        <div class="col-4">
-          <div class="row">Ikon x2</div>
-          <div class="row">Ikon x2</div>
+        <div class="col-4 d-flex flex-column justify-content-around align-items-center">
+          <div class="row text-center">
+            <div class="col-6">
+              <div class="row text-center d-flex justify-content-center">
+                <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class="row text-center d-flex justify-content-center header_icon">Device Mockups</div>
+              <div class="row text-center d-flex justify-content-center paragraph">
+                Ready to use HTML/CSS device mockups, no Photoshop required!
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row text-center d-flex justify-content-center">
+                <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class="row text-center d-flex justify-content-center header_icon">Flexible Use</div>
+              <div class="row text-center d-flex justify-content-center paragraph">
+                Put an image, video, animation or anything else in the screen!
+              </div>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-6">
+              <div class="row text-center d-flex justify-content-center">
+                <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class="row text-center d-flex justify-content-center header_icon">Free to Use</div>
+              <div class="row text-center d-flex justify-content-center paragraph">
+                As always, this theme is free to download and use for any purpose!
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row text-center d-flex justify-content-center">
+                <i class="fa fa-unlock-alt fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class="row text-center d-flex justify-content-center header_icon">Open source</div>
+              <div class="row text-center d-flex justify-content-center paragraph">
+                Since this theme is MIT licensed, you can use it commercially!
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-2"></div>
+         
+        </div>
       </div>
-    </div>
 
-    <div
-      class="container__segment--fourth d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="col col-5">
-        <div class="row intro--light">Stop waiting.</div>
-        <div class="row intro--light">Start building.</div>
+      <div
+        class="container__segment--fourth d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="col col-5">
+          <div class="row intro--light header">Stop waiting.</div>
+          <div class="row intro--light header">Start building.</div>
 
-        <button class="row btn btn--startNow mt-5">LET'S GET STARTED!</button>
+          <button class="row btn btn--startNow mt-5">LET'S GET STARTED!</button>
+        </div>
       </div>
-    </div>
 
-    <div
-      class="container__segment--fifth d-flex justify-content-center align-items-center"
-    >
-      <div class="row text-center">
-        <div class="col col-12">
-          <div class="intro--dark mb-3">We ❤️ new friends!</div>
-          <div class="links">
-            <div class="twitter">
-              <a href="https://twitter.com" target="_blank"
-                ><i class="fa fa-twitter" aria-hidden="true"></i
-              ></a>
-            </div>
-            <div class="facebook">
-              <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fa fa-facebook" aria-hidden="true"></i
-              ></a>
-            </div>
-            <div class="youtube">
-              <a href="https://youtube.com" target="_blank"
-                ><i class="fa fa-youtube-play" aria-hidden="true"></i
-              ></a>
+      <div
+       id="contact" class="container__segment--fifth d-flex justify-content-center align-items-center"
+      >
+        <div class="row text-center">
+          <div class="col col-12">
+            <div class="intro--dark mb-3 header">We ❤️ new friends!</div>
+            <div class="links">
+              <div class="twitter">
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="facebook">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="youtube">
+                <a href="https://youtube.com" target="_blank"
+                  ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="footer container__segment--sixth d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="row text-center">
-        <div class="copyright">
-          © Bootstrap Project 2022. All Rights Reserved.
+      <div
+        class="footer container__segment--sixth d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="row text-center">
+          <div class="copyright">
+            © Bootstrap Project 2022. All Rights Reserved.
+          </div>
         </div>
-      </div>
 
         <div class="row text-center">
           <div class="footerlinks">
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
-            <a href="">FAQ</a>
+            <span><a>Privacy</a></span>
+            <span><a>Terms</a></span>
+            <span><a>FAQ</a></span>
           </div>
         </div>
       </div>
     </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myBSModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myBSTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+      </div>
+    </div>
+  </div>
+</div>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
